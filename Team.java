@@ -1,11 +1,5 @@
 public class Team {
 	
-	public void main(String args[]) {
-		
-		switch()
-		
-	}
-	
 	public void showMenu()
     {
 
@@ -16,6 +10,11 @@ public class Team {
         
         
     }
-    }
+    
+	public void main(String args[]) {
+		
+		switch()
+		
+	}
 	
 }
