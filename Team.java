@@ -1,11 +1,5 @@
 public class Team {
 	
-	public void main(String args[]) {
-		
-		switch()
-		
-	}
-	
 	public void showMenu()
     {
 
@@ -21,6 +15,7 @@ public class Team {
         }
         
     }
+	
 		public Member addMembers() {
 			String Info = InputOutput.input("Name:Surname:Sex:DD/MM/YYYY");
 			String[] Info_input = Info.split("[:/]");
@@ -28,6 +23,15 @@ public class Team {
 			
 			return  NewMember;
 		}
+
+    
+	public void main(String args[]) {
+		
+		switch()
+		
+	}
+	
+>>>>>>> 824592592959f91197688168025c1445de38c0a4
 }
 	
 
