@@ -39,4 +39,8 @@ public class Member {
 		return year;
 	}
 	
+	public String toString() {
+		return name+", "+sex+", "+" born : " + date+'/'+month+'/'+year;
+	}
+	
 }
