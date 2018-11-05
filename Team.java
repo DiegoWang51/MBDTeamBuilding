@@ -1,6 +1,6 @@
 public class Team {
 	
-	public void showMenu()
+	public static void showMenu()
     {
 
         InputOutput.output("========================");
@@ -8,30 +8,65 @@ public class Team {
         InputOutput.output("========================");
         
         int members = InputOutput.inputInt("Memebers in the team: ");
-        Member[] team = new Member[members];
+        Member[] teamMembers = new Member[members];
         
         for (int i = 0; i< members; i++) {
-        	team[i] = addMembers();
+        	teamMembers[i] = addMembers();
         }
         
     }
 	
-		public Member addMembers() {
+		public static Member addMembers() {
 			String Info = InputOutput.input("Name:Surname:Sex:DD/MM/YYYY");
 			String[] Info_input = Info.split("[:/]");
-			NewMember = Member(Info_input[0],Info_input[1],Info_input[2].toCharArray()[0],(Info_input[3]),int(Info_input[4]),int(Info_input[5]));
-			
+			Member NewMember = new Member(Info_input[0],Info_input[1],Info_input[2].toCharArray()[0],Integer.valueOf(Info_input[3]),Integer.valueOf(Info_input[4]).intValue(),Integer.valueOf(Info_input[5]).intValue());
 			return  NewMember;
 		}
 
     
-	public void main(String args[]) {
-		
-		switch()
+	public static void main(String args[]) {
+		showMenu();
+	
+		InputOutput.output("Team Builder Menu:");
+		InputOutput.output("=======================");
+	    InputOutput.output("1) List the team members");
+	    InputOutput.output("2) Find the oldest member");
+	    InputOutput.output("3) Find the youngest member");
+	
+		int selection = InputOutput.inputInt("Which action do you want to perform? ");
+        
+        switch (selection) {
+        case 1 : 
+        	listMember();
+        break;
+        case 2 :
+        	findOld();
+        break;
+        case 3 : 
+        	findYoung();
+        break;
+        default:
+        try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+        showMenu();
+       
+        }
+	}
+	
+	public static void listMember() {
 		
 	}
 	
->>>>>>> 824592592959f91197688168025c1445de38c0a4
+	public static void findOld() {
+		
+	}
+	
+	public static void findYoung() {
+		
+	}
 }
 	
 
