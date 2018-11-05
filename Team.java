@@ -4,7 +4,7 @@ public class Team {
     {
 
         InputOutput.output("========================");
-        InputOutput.output("Welcome to the TEAM Building system !!!!!");
+        InputOutput.output("Welcome to the TEAM Building system.");
         InputOutput.output("========================");
         
         
@@ -12,6 +12,8 @@ public class Team {
     }
     
 	public void main(String args[]) {
+		
+		InputOutput.output("How many team members do you have?");
 		
 		switch()
 		
