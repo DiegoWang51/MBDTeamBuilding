@@ -4,7 +4,7 @@ public class Team {
     {
 
         InputOutput.output("========================");
-        InputOutput.output("Welcome to the TEAM Building system !!!!!");
+        InputOutput.output("Welcome to the TEAM Building system.");
         InputOutput.output("========================");
         
         int members = InputOutput.inputInt("Memebers in the team: ");
@@ -57,13 +57,11 @@ public class Team {
 	}
 	
 	public static void listMember() {
-		
-	}
 	
+	}	
 	public static void findOld() {
-		
+
 	}
-	
 	public static void findYoung() {
 		
 	}
