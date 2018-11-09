@@ -17,14 +17,14 @@ public class BubbleSort
         { for(current = 0; current < last; current = current + 1)
             { 
                 if(ascending) {
-                    if (teamMembers[current].getYear() > teamMembers[current + 1].getYear())
+                    if (teamMembers[current].getOld() > teamMembers[current + 1].getOld())
                     {
                         temp = teamMembers[current];
                         teamMembers[current] = teamMembers[current+1];
                         teamMembers[current+1] = temp;
                     }
                 } else {
-                    if (teamMembers[current].getYear() < teamMembers[current + 1].getYear())
+                    if (teamMembers[current].getOld() < teamMembers[current + 1].getOld())
                     {
                         temp = teamMembers[current];
                         teamMembers[current] = teamMembers[current+1];

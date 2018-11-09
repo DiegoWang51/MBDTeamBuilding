@@ -39,6 +39,10 @@ public class Member {
 		return year;
 	}
 	
+	public int getOld() {
+		return year*10000000+month*10000+date*10;
+	}
+	
 	public String toString() {
 		return name+", "+sex+", "+" born : " + date+'/'+month+'/'+year;
 	}
